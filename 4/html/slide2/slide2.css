@@ -1,0 +1,23 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.background {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.map {
+  position: absolute;
+  left: 450px;
+  top: 167px;
+  width: 480px;
+  height: 537px;
+  animation: zoomIn 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  z-index: 3;
+}
