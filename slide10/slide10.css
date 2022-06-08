@@ -1,0 +1,142 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.s10_1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.s10_2 {
+	position: absolute;
+  left: 384px;
+  top: 359px;
+  width: 715px;
+  height: 389px;
+	animation: fadeInRight 1s;
+	animation-delay: 0.2s;
+	animation-fill-mode: both;
+	z-index: 4;
+}
+
+.s10_3 {
+	position: absolute;
+  left: 69px;
+  top: 383px;
+  width: 901px;
+  height: 279px;
+	animation: fadeInUp 1s;
+	animation-delay: 1.5s;
+	animation-fill-mode: both;
+	z-index: 3;
+}
+
+.s10_4 {
+	position: absolute;
+  left: 54px;
+  top: 453px;
+  width: 420px;
+  height: 65px;
+	animation: fadeInLeft 1s;
+	animation-delay: 2.5s;
+	animation-fill-mode: both;
+	z-index: 2;
+}
+
+.s10_5 {
+	position: absolute;
+  left: 544px;
+  top: 453px;
+  width: 420px;
+  height: 65px;
+	animation: fadeInRight 1s;
+	animation-delay: 2.5s;
+	animation-fill-mode: both;
+	z-index: 2;
+}
+
+.s10_6 {
+	position: absolute;
+  left: 54px;
+  top: 596px;
+  width: 420px;
+  height: 64px;
+	animation: fadeInLeft 1s;
+	animation-delay: 3.5s;
+	animation-fill-mode: both;
+	z-index: 2;
+}
+
+.s10_7 {
+	position: absolute;
+  left: 544px;
+  top: 595px;
+  width: 420px;
+  height: 65px;
+	animation: fadeInRight 1s;
+	animation-delay: 3.5s;
+	animation-fill-mode: both;
+	z-index: 2;
+}
+
+.s10_8 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 10;
+}
+
+.s10_pop1 {
+	position: absolute;
+	height: 100px;
+	width: 150px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 15;
+}
+
+.s10_c1ose1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 20;
+}
+
+
+@-webkit-keyframes fadeInDownSmall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -25%, 0);
+    transform: translate3d(0, -25%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDownSmall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -25%, 0);
+    transform: translate3d(0, -25%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDownSmallSmall {
+  -webkit-animation-name: fadeInDownSmall;
+  animation-name: fadeInDownSmall;
+}
