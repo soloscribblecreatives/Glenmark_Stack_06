@@ -17,7 +17,7 @@
   width: 66px;
   height: 0px;
 	animation: growHeight 1s;
-	animation-delay: 0s;
+	animation-delay: 0.3s;
 	animation-fill-mode: both;
 	overflow: hidden;
 	z-index: 4;

@@ -29,7 +29,7 @@
   width: 356px;
   height: 185px;
 	animation: fadeInUp 1s;
-	animation-delay: 0s;
+	animation-delay: 0.2s;
 	animation-fill-mode: both;
 	z-index: 3;
 }
