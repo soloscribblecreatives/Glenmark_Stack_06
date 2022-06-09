@@ -34,10 +34,10 @@
 .s6_4 {
 	position: absolute;
   left: 845px;
-  top: 368px;
+  top: 400px;
   width: 137px;
   height: 232px;
-	animation: fadeInUp 1s;
+	animation: upDown 1.5s infinite;
 	animation-delay: 0.2s;
 	animation-fill-mode: both;
 	z-index: 3;
@@ -149,4 +149,22 @@
 .fadeInDownSmallSmall {
   -webkit-animation-name: fadeInDownSmall;
   animation-name: fadeInDownSmall;
+}
+
+
+@keyframes upDown {
+  0% {
+    opacity: 1;
+	top: 400px;
+  }
+
+  50% {
+    opacity: 1;
+    top: 350px;
+  }
+  
+  100% {
+    opacity: 1;
+    top: 400px;
+  }
 }

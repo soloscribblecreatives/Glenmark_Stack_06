@@ -13,9 +13,9 @@
 .s5_2 {
 	position: absolute;
   left: 365px;
-  top: 565px;
+  top: 368px;
   width: 659px;
-  height: 203px;
+  height: 400px;
 	animation: none 1s;
 	animation-delay: 0.5s;
 	animation-fill-mode: both;
@@ -26,23 +26,22 @@
 	position: absolute;
   left: 508px;
   top: 368px;
-  width: 356px;
-  height: 185px;
+  width: 145px;
+  height: 184px;
 	animation: fadeInUp 1s;
 	animation-delay: 0.2s;
 	animation-fill-mode: both;
 	z-index: 3;
 }
 
-
 .s5_4 {
 	position: absolute;
-  left: 40px;
-  top: 402px;
-  width: 375px;
-  height: 262px;
-	animation: fadeInLeft 1s;
-	animation-delay: 2.5s;
+  left: 752px;
+  top: 386px;
+  width: 112px;
+  height: 166px;
+	animation: fadeInUp 1s;
+	animation-delay: 0.6s;
 	animation-fill-mode: both;
 	z-index: 2;
 }
