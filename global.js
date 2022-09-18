@@ -198,7 +198,7 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 	
  } 
  
-	if(nextSlideNo <= 11){//number 3 is number of total slides present
+	if(nextSlideNo <= 12){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -302,10 +302,10 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id <= 11){
+	if(page_id <= 12){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 12){
+		if(page_id == 13){
             flag=1;
         }
 	}
@@ -385,37 +385,40 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png"/></div><div class="s1_2"><img src="slide1/s1_2.png"/></div><div class="s1_3"><img src="slide1/s1_3.png"/></div><div class="s1_4"><img src="slide1/s1_4.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png"/></div><div class="s2_2"><img src="slide2/s2_2.png"/></div><div class="s2_3"><img src="slide2/s2_3.png"/></div><div class="s2_4"><img src="slide2/s2_4.png"/></div><div class="s2_5"><img src="slide2/s2_5.png"/></div><div class="s2_6"><img src="slide2/s2_6.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><div class="video1"><video class="popup1" id="popup1" controls><source src="slide2/1 Glycemic control Durability of TZDs.mp4" type="video/mp4"></video></div><div class="pop_open1" onclick="pop_open1()"></div><div class="video2"><video class="popup1" id="popup2" controls><source src="slide2/2 Effect of PIO on B cell preservation.mp4" type="video/mp4"></video></div><div class="pop_open2" onclick="pop_open2()"></div><div class="video3"><video class="popup1" id="popup3" controls><source src="slide2/3 Where TZDs work in Ominous Octet.mp4" type="video/mp4"></video></div><div class="pop_open3" onclick="pop_open3()"></div><div class="video4"><video class="popup1" id="popup4" controls><source src="slide2/4 PIO & CV protection- PROACTIVE & IRIS.mp4" type="video/mp4"></video></div><div class="pop_open4" onclick="pop_open4()"></div><div class="video5"><video class="popup1" id="popup5" controls><source src="slide2/5 STROKE- things need to know.mp4" type="video/mp4"></video></div><div class="pop_open5" onclick="pop_open5()"></div><div class="video6"><video class="popup1" id="popup6" controls><source src="slide2/6 PIO & CV protection- MOA.mp4" type="video/mp4"></video></div><div class="pop_open6" onclick="pop_open6()"></div><div class="video7"><video class="popup1" id="popup7" controls><source src="slide2/7 PIO Side effects- 1- Weight Gain.mp4" type="video/mp4"></video></div><div class="pop_open7" onclick="pop_open7()"></div><div class="video8"><video class="popup1" id="popup8" controls><source src="slide2/8 PIO Side effects- 2- HEART FAILURE & FLUID RETENTION.mp4" type="video/mp4"></video></div><div class="pop_open8" onclick="pop_open8()"></div><div class="video9"><video class="popup1" id="popup9" controls><source src="slide2/9 PIO Side effects- 3- BLADDER CANCER.mp4" type="video/mp4"></video></div><div class="pop_open9" onclick="pop_open9()"></div><div class="video10"><video class="popup1" id="popup10" controls><source src="slide2/10 PIO on MI.mp4" type="video/mp4"></video></div><div class="pop_open10" onclick="pop_open10()"></div><div class="pop_close" onclick="pop_close();pop_close1();pop_close2();pop_close3();pop_close4();pop_close5();pop_close6();pop_close7();pop_close8();pop_close9();pop_close10();"><img src="slide2/cross.png"></div>';
 	break;
 	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s3_1"><img src="slide3/s3_1.png" width="1024" height="768" alt=""></div><div class="s3_2"><img src="slide3/s3_2.png"/></div><div class="s3_3"><img src="slide3/s3_3.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="s4_1"><img src="slide4/s4_1.png" width="1024" height="768" alt=""></div><div class="s4_2"><img src="slide4/s4_2.png" width="1024" height="768" alt=""/></div><div class="s4_3"><img src="slide4/s4_3.png"/></div><div class="switch" onclick="switchOn()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="s5_1"><img src="slide5/s5_1.png" width="1024" height="768" alt=""></div><div class="s5_2"><img src="slide5/s5_2.png"/></div><div class="s5_3"><img src="slide5/s5_3.png"/></div><div class="s5_4"><img src="slide5/s5_4.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide5/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide6/slide6.css" media="screen"/><div class="s6_1"><img src="slide6/s6_1.png" width="1024" height="768" alt=""></div><div class="s6_2"><img src="slide6/s6_2.png"/></div><div class="s6_3"><img src="slide6/s6_3.png"/></div><div class="s6_4"><img src="slide6/s6_4.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide6/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 7:
-	content='<link rel="stylesheet" type="text/css" href="slide7/slide7.css" media="screen"/><div class="s7_1"><img src="slide7/s7_1.png" width="1024" height="768" alt=""></div><div class="s7_2_wrap"><div class="s7_2"><img src="slide7/s7_2.png"/></div><div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide7/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 8:
-	content='<link rel="stylesheet" type="text/css" href="slide8/slide8.css" media="screen"/><div class="s8_1"><img src="slide8/s8_1.png" width="1024" height="768" alt=""></div><div class="s8_2"><img src="slide8/s8_2.png"/></div><div class="s8_3"><img src="slide8/s8_3.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide8/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 9:
-	content='<link rel="stylesheet" type="text/css" href="slide9/slide9.css" media="screen"/><div class="s9_1"><img src="slide9/s9_1.png" width="1024" height="768" alt=""></div><div class="s9_2"><img src="slide9/s9_2.png"/></div><div class="s9_3"><img src="slide9/s9_3.png"/></div><div class="s9_4"><img src="slide9/s9_4.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide9/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 10:
-	content='<link rel="stylesheet" type="text/css" href="slide10/slide10.css" media="screen"/><div class="s10_1"><img src="slide10/s10_1.png" width="1024" height="768" alt=""/></div><div class="s10_2"><img src="slide10/s10_2.png"/></div><div class="s10_3"><img src="slide10/s10_3.png"/></div><div class="s10_4"><img src="slide10/s10_4.png"/></div><div class="s10_5"><img src="slide10/s10_5.png"/></div><div class="s10_6"><img src="slide10/s10_6.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide10/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 11:
 	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide11/1.jpg" width="1024" height="768" alt=""></div>';
+	break;
+	case 12:
+	content='<link rel="stylesheet" type="text/css" href="slide12/slide2.css" media="screen"/><div class="background"><img src="slide12/1.jpg" width="1024" height="768" alt=""></div><div class="popup"><img src="slide11/2.jpg" width="1024" height="768" alt=""/></div><div class="pop_open" onclick="pop_open()"></div><div class="pop_close" onclick="pop_close()"></div>';
 	break;
 }
 
@@ -559,21 +562,142 @@ $(document).ready(function(){
 })
 
 
-//----------------------------------//
+/*--------------------- animation javascript -----------------------*/
 
-function pop_open() {
-	$('.popup').css('display','block');
-	$('.pop_open').css('display','none');
-	$('.pop_close').css('display','block');
+function pop_open1() {
+	$('.video1').css("display","block");
+	$('.pop_close').css("display","block");
+	$('.pop_open1').css("display","none");
+	document.getElementById("popup1").play();
 }
+
+function pop_open2() {
+	$('.video2').css("display","block");
+	$('.pop_close').css("display","block");
+	$('.pop_open2').css("display","none");
+	document.getElementById("popup2").play();
+}
+
+function pop_open3() {
+	$('.video3').css("display","block");
+	$('.pop_close').css("display","block");
+	$('.pop_open3').css("display","none");
+	document.getElementById("popup3").play();
+}
+
+function pop_open4() {
+	$('.video4').css("display","block");
+	$('.pop_close').css("display","block");
+	$('.pop_open4').css("display","none");
+	document.getElementById("popup4").play();
+}
+
+function pop_open5() {
+	$('.video5').css("display","block");
+	$('.pop_close').css("display","block");
+	$('.pop_open5').css("display","none");
+	document.getElementById("popup5").play();
+}
+
+function pop_open6() {
+	$('.video6').css("display","block");
+	$('.pop_close').css("display","block");
+	$('.pop_open6').css("display","none");
+	document.getElementById("popup6").play();
+}
+
+function pop_open7() {
+	$('.video7').css("display","block");
+	$('.pop_close').css("display","block");
+	$('.pop_open7').css("display","none");
+	document.getElementById("popup7").play();
+}
+
+function pop_open8() {
+	$('.video8').css("display","block");
+	$('.pop_close').css("display","block");
+	$('.pop_open8').css("display","none");
+	document.getElementById("popup8").play();
+}
+
+function pop_open9() {
+	$('.video9').css("display","block");
+	$('.pop_close').css("display","block");
+	$('.pop_open9').css("display","none");
+	document.getElementById("popup9").play();
+}
+
+function pop_open10() {
+	$('.video10').css("display","block");
+	$('.pop_close').css("display","block");
+	$('.pop_open10').css("display","none");
+	document.getElementById("popup10").play();
+}
+
+
 
 function pop_close() {
-	$('.popup').css('display','none');
-	$('.pop_open').css('display','block');
-	$('.pop_close').css('display','none');
+	$('.video1, .video2, .video3, .video4, .video5, .video6, .video7, .video8, .video9, .video10').css("display","none");
+	$('.pop_close').css("display","none");
+	$('.pop_open1, .pop_open2, .pop_open3, .pop_open4, .pop_open5, .pop_open6, .pop_open7, .pop_open8, .pop_open9, .pop_open10').css("display","block");
 }
 
-function switchOn() {
-	$('.s4_2').css('display','block');
-	$('.s4_3').css('display','block');
+function pop_close1() {
+	var vid = document.getElementById("popup1");
+	vid.pause();
+	vid.currentTime = 0;
+}
+
+function pop_close2() {
+	var vid = document.getElementById("popup2");
+	vid.pause();
+	vid.currentTime = 0;
+}
+
+function pop_close3() {
+	var vid = document.getElementById("popup3");
+	vid.pause();
+	vid.currentTime = 0;
+}
+
+function pop_close4() {
+	var vid = document.getElementById("popup4");
+	vid.pause();
+	vid.currentTime = 0;
+}
+
+function pop_close5() {
+	var vid = document.getElementById("popup5");
+	vid.pause();
+	vid.currentTime = 0;
+}
+
+function pop_close6() {
+	var vid = document.getElementById("popup6");
+	vid.pause();
+	vid.currentTime = 0;
+}
+
+function pop_close7() {
+	var vid = document.getElementById("popup7");
+	vid.pause();
+	vid.currentTime = 0;
+}
+
+function pop_close8() {
+	var vid = document.getElementById("popup8");
+	vid.pause();
+	vid.currentTime = 0;
+}
+
+function pop_close9() {
+	var vid = document.getElementById("popup9");
+	vid.pause();
+	vid.currentTime = 0;
+}
+
+function pop_close10() {
+	var vid = document.getElementById("popup10");
+	vid.pause();
+	vid.currentTime = 0;
 }
