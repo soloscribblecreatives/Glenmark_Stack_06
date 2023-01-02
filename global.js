@@ -541,22 +541,9 @@ function pop_open() {
 	vid.currentTime = 0;
 }
 
-function pop_close() {
+/* function pop_close() {
 	$('.popup').css('display','none');
 	$('.pop_open').css('display','block');
 	$('.pop_close').css('display','none');
 	document.getElementById("myVideo").play();
-}
-
-if (vid.currentTime = 3) {
-	$('.pop_open').css('display','block');
-}
-
-$(document).ready(function() {
-    $('.pop_open').css('display','none'); 
-document.getElementById('myVideo').addEventListener("timeupdate", function() {
-    if(this.currentTime = 10) {
-$('.pop_open').css('display','block');
-    }
-});
-});
+} */
