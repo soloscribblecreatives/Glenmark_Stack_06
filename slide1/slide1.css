@@ -1,0 +1,44 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.background {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.video {
+	position: absolute;
+	top: 100px;
+	width: 1024px;
+	height: 576px;
+	z-index: 2;
+}
+
+.popup {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  display: none;
+  z-index: 15;
+}
+
+.pop_open {
+  position: absolute;
+  left: 289px;
+  top: 132px;
+  width: 444px;
+  height: 507px;
+  z-index: 10;
+}
+
+.pop_close {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 20;
+}

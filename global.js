@@ -198,7 +198,7 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 	
  } 
  
-	if(nextSlideNo <= 12){//number 3 is number of total slides present
+	if(nextSlideNo <= 2){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -302,10 +302,10 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id <= 12){
+	if(page_id <= 2){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 13){
+		if(page_id == 3){
             flag=1;
         }
 	}
@@ -385,40 +385,10 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><video id="myVideo" class="video" width="1024" height="576" controls autoplay><source src="slide1/1.mp4" type="video/mp4"></video></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><div class="video1"><video class="popup1" id="popup1" controls><source src="slide2/PIO & CV protection- PROACTIVE & IRIS.mp4" type="video/mp4"></video></div><div class="pop_open1" onclick="pop_open1()"></div><div class="video2"><video class="popup1" id="popup2" controls><source src="slide2/PIO Side effects- 3- BLADDER CANCER.mp4" type="video/mp4"></video></div><div class="pop_open2" onclick="pop_open2()"></div><div class="pop_close" onclick="pop_close();pop_close1();pop_close2();"><img src="slide2/cross.png"></div>';
-	break;
-	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide5/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide6/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 7:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide7/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 8:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide8/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 9:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide9/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 10:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide10/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 11:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide11/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 12:
-	content='<link rel="stylesheet" type="text/css" href="slide12/slide2.css" media="screen"/><div class="background"><img src="slide12/1.jpg" width="1024" height="768" alt=""></div><div class="popup"><img src="slide11/2.jpg" width="1024" height="768" alt=""/></div><div class="pop_open" onclick="pop_open()"></div><div class="pop_close" onclick="pop_close()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><div class="popup"><img src="slide2/2.jpg" width="1024" height="768" alt=""/></div><div class="pop_open" onclick="pop_open()"></div><div class="pop_close" onclick="pop_close()"></div>';
 	break;
 }
 
@@ -562,142 +532,31 @@ $(document).ready(function(){
 })
 
 
-/*--------------------- animation javascript -----------------------*/
-
-function pop_open1() {
-	$('.video1').css("display","block");
-	$('.pop_close').css("display","block");
-	$('.pop_open1').css("display","none");
-	document.getElementById("popup1").play();
+function pop_open() {
+	$('.popup').css('display','block');
+	$('.pop_open').css('display','none');
+	$('.pop_close').css('display','block');
+	var vid = document.getElementById("myVideo");
+	vid.pause();
+	vid.currentTime = 0;
 }
-
-function pop_open2() {
-	$('.video2').css("display","block");
-	$('.pop_close').css("display","block");
-	$('.pop_open2').css("display","none");
-	document.getElementById("popup2").play();
-}
-
-function pop_open3() {
-	$('.video3').css("display","block");
-	$('.pop_close').css("display","block");
-	$('.pop_open3').css("display","none");
-	document.getElementById("popup3").play();
-}
-
-function pop_open4() {
-	$('.video4').css("display","block");
-	$('.pop_close').css("display","block");
-	$('.pop_open4').css("display","none");
-	document.getElementById("popup4").play();
-}
-
-function pop_open5() {
-	$('.video5').css("display","block");
-	$('.pop_close').css("display","block");
-	$('.pop_open5').css("display","none");
-	document.getElementById("popup5").play();
-}
-
-function pop_open6() {
-	$('.video6').css("display","block");
-	$('.pop_close').css("display","block");
-	$('.pop_open6').css("display","none");
-	document.getElementById("popup6").play();
-}
-
-function pop_open7() {
-	$('.video7').css("display","block");
-	$('.pop_close').css("display","block");
-	$('.pop_open7').css("display","none");
-	document.getElementById("popup7").play();
-}
-
-function pop_open8() {
-	$('.video8').css("display","block");
-	$('.pop_close').css("display","block");
-	$('.pop_open8').css("display","none");
-	document.getElementById("popup8").play();
-}
-
-function pop_open9() {
-	$('.video9').css("display","block");
-	$('.pop_close').css("display","block");
-	$('.pop_open9').css("display","none");
-	document.getElementById("popup9").play();
-}
-
-function pop_open10() {
-	$('.video10').css("display","block");
-	$('.pop_close').css("display","block");
-	$('.pop_open10').css("display","none");
-	document.getElementById("popup10").play();
-}
-
-
 
 function pop_close() {
-	$('.video1, .video2, .video3, .video4, .video5, .video6, .video7, .video8, .video9, .video10').css("display","none");
-	$('.pop_close').css("display","none");
-	$('.pop_open1, .pop_open2, .pop_open3, .pop_open4, .pop_open5, .pop_open6, .pop_open7, .pop_open8, .pop_open9, .pop_open10').css("display","block");
+	$('.popup').css('display','none');
+	$('.pop_open').css('display','block');
+	$('.pop_close').css('display','none');
+	document.getElementById("myVideo").play();
 }
 
-function pop_close1() {
-	var vid = document.getElementById("popup1");
-	vid.pause();
-	vid.currentTime = 0;
+if (vid.currentTime = 3) {
+	$('.pop_open').css('display','block');
 }
 
-function pop_close2() {
-	var vid = document.getElementById("popup2");
-	vid.pause();
-	vid.currentTime = 0;
-}
-
-function pop_close3() {
-	var vid = document.getElementById("popup3");
-	vid.pause();
-	vid.currentTime = 0;
-}
-
-function pop_close4() {
-	var vid = document.getElementById("popup4");
-	vid.pause();
-	vid.currentTime = 0;
-}
-
-function pop_close5() {
-	var vid = document.getElementById("popup5");
-	vid.pause();
-	vid.currentTime = 0;
-}
-
-function pop_close6() {
-	var vid = document.getElementById("popup6");
-	vid.pause();
-	vid.currentTime = 0;
-}
-
-function pop_close7() {
-	var vid = document.getElementById("popup7");
-	vid.pause();
-	vid.currentTime = 0;
-}
-
-function pop_close8() {
-	var vid = document.getElementById("popup8");
-	vid.pause();
-	vid.currentTime = 0;
-}
-
-function pop_close9() {
-	var vid = document.getElementById("popup9");
-	vid.pause();
-	vid.currentTime = 0;
-}
-
-function pop_close10() {
-	var vid = document.getElementById("popup10");
-	vid.pause();
-	vid.currentTime = 0;
-}
+$(document).ready(function() {
+    $('.pop_open').css('display','none'); 
+document.getElementById('myVideo').addEventListener("timeupdate", function() {
+    if(this.currentTime = 10) {
+$('.pop_open').css('display','block');
+    }
+});
+});
