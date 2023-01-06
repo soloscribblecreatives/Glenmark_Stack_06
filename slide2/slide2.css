@@ -1,44 +1,87 @@
-* {
+*{
 	margin: 0px;
 	padding: 0px;
 }
 
-.background {
+.s2_1 {
 	position: absolute;
 	width: 1024px;
 	height: 768px;
 	z-index: 1;
 }
 
-.video {
+.s2_2 {
 	position: absolute;
-	top: 100px;
-	width: 1024px;
-	height: 576px;
+  left: 108px;
+  top: 159px;
+  width: 99px;
+  height: 155px;
+	display: none;
 	z-index: 2;
 }
 
-.popup {
-  position: absolute;
-  width: 1024px;
-  height: 768px;
-  display: none;
-  z-index: 15;
-}
-
-.pop_open {
-  position: absolute;
-  left: 289px;
-  top: 132px;
-  width: 444px;
-  height: 507px;
-  z-index: 10;
-}
-
-.pop_close {
+.s2_3 {
 	position: absolute;
-	width: 1024px;
-	height: 768px;
+  left: 102px;
+  top: 33px;
+  width: 848px;
+  height: 331px;
+	animation: fadeInUp 1s;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	z-index: 3;
+}
+
+.s2_4 {
+	position: absolute;
+  left: 354px;
+  top: 404px;
+  width: 316px;
+  height: 322px;
+	animation: zoomIn 0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
 	display: none;
-	z-index: 20;
+	z-index: 3;
+}
+
+.s2_5 {
+	position: absolute;
+  left: 554px;
+  top: 408px;
+  width: 399px;
+  height: 266px;
+	animation: fadeInRight 1s;
+	animation-delay: 3.5s;
+	animation-fill-mode: both;
+	z-index: 3;
+}
+
+
+@-webkit-keyframes revealHorizontal {
+  0% {
+    clip: rect(0px,0px,100px,0px);
+	opacity: 1;
+  }
+  
+  100% {
+    clip: rect(0px,900px,100px,0px);
+	opacity: 1;
+  }
+}
+@keyframes revealHorizontal {
+  0% {
+    clip: rect(0px,0px,100px,0px);
+	opacity: 1;
+  }
+  
+  100% {
+    clip: rect(0px,900px,100px,0px);
+	opacity: 1;
+  }
+}
+
+.revealHorizontal {
+  -webkit-animation-name: revealHorizontal;
+  animation-name: revealHorizontal;
 }
