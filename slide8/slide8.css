@@ -16,7 +16,7 @@
   top: 447px;
   width: 193px;
   height: 192px;
-	animation: rotateIn 1s;
+	animation: rotateIn 0.5s;
 	animation-delay: 0s;
 	animation-fill-mode: both;
 	z-index: 4;
@@ -41,7 +41,7 @@
   width: 315px;
   height: 85px;
 	animation: fadeInLeft 0.5s;
-	animation-delay: 1s;
+	animation-delay: 0.5s;
 	animation-fill-mode: both;
 	z-index: 10;
 }
@@ -53,7 +53,7 @@
   width: 278px;
   height: 85px;
 	animation: fadeInRight 0.5s;
-	animation-delay: 1s;
+	animation-delay: 0.5s;
 	animation-fill-mode: both;
 	z-index: 2;
 }

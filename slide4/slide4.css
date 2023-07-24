@@ -16,7 +16,7 @@
   top: 436px;
   width: 204px;
   height: 220px;
-	animation: revealVertical 1s;
+	animation: revealVertical 0.5s;
 	clip: rect(0px,210px,0px,0px);
 	animation-delay: 0.2s;
 	animation-fill-mode: both;
@@ -30,7 +30,7 @@
   width: 82px;
   height: 84px;
 	animation: bounceIn 0.5s;
-	animation-delay: 1.5s;
+	animation-delay: 0.7s;
 	animation-fill-mode: both;
 	z-index: 3;
 }
@@ -42,7 +42,7 @@
   width: 80px;
   height: 84px;
 	animation: bounceIn 0.5s;
-	animation-delay: 2s;
+	animation-delay: 0.9s;
 	animation-fill-mode: both;
 	z-index: 2;
 }

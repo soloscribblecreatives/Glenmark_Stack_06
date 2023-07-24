@@ -17,7 +17,7 @@
   width: 865px;
   height: 316px;
 	animation: zoomIn 0.5s;
-	animation-delay: 1s;
+	animation-delay: 0.8s;
 	animation-fill-mode: both;
 	z-index: 3;
 }

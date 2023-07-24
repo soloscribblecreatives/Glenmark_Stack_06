@@ -29,7 +29,7 @@
   width: 87px;
   height: 89px;
 	animation: bounceIn 0.5s;
-	animation-delay: 0.5s;
+	animation-delay: 0.2s;
 	animation-fill-mode: both;
 	z-index: 3;
 }
@@ -41,7 +41,7 @@
   width: 87px;
   height: 89px;
 	animation: bounceIn 0.5s;
-	animation-delay: 1s;
+	animation-delay: 0.4s;
 	animation-fill-mode: both;
 	z-index: 10;
 }

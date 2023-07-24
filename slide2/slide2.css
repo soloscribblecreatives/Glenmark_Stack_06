@@ -40,7 +40,7 @@
   top: 257px;
   width: 278px;
   height: 270px;
-	animation: zoomIn 0.5s;
+	animation: stampIn 0.2s;
 	animation-delay: 1.3s;
 	animation-fill-mode: both;
 	z-index: 2;
@@ -129,6 +129,18 @@
 	height: 768px;
 	display: none;
 	z-index: 20;
+}
+
+@keyframes stampIn {
+	0%	{
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0;
+	}
+	100%	{
+		transform: scale(1);
+		opacity: 1;
+	}
 }
 
 

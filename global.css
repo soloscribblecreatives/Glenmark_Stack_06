@@ -116,7 +116,7 @@ html[xmlns] .clearfix {
 .left_arrow {
 	float: left;
 	position: absolute;
-	left: 45px;
+	left: 25px;
 	cursor: pointer;
 	z-index: 999;
 	top: 3px;
@@ -127,7 +127,7 @@ html[xmlns] .clearfix {
 .right_arrow {
 	float: right;
 	position: absolute;
-	right: 40px;
+	right: 20px;
 	cursor: pointer;
 	z-index: 999;
 	width: 27px;
@@ -257,6 +257,23 @@ html[xmlns] .clearfix {
 }
 
 .api {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 10;
+}
+
+.graphUp {
+	position: absolute;
+  left: 236px;
+  top: 366px;
+  width: 318px;
+  height: 350px;
+	z-index: 15;
+}
+
+.graph {
 	position: absolute;
 	width: 1024px;
 	height: 768px;

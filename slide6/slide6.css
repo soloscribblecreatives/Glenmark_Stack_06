@@ -30,7 +30,7 @@
   width: 87px;
   height: 91px;
 	animation: bounceIn 0.5s;
-	animation-delay: 1.5s;
+	animation-delay: 0.7s;
 	animation-fill-mode: both;
 	z-index: 3;
 }
