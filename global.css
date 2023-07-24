@@ -237,3 +237,46 @@ html[xmlns] .clearfix {
 	background-color: rgba(0,0,0,0.5);
 	color: #ffffff;
 }
+
+
+.pop {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 10;
+}
+
+.popUp {
+	position: absolute;
+  left: 926px;
+  top: 697px;
+  width: 98px;
+  height: 71px;
+	z-index: 15;
+}
+
+.api {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 10;
+}
+
+.apiUp {
+	position: absolute;
+  left: 828px;
+  top: 697px;
+  width: 98px;
+  height: 71px;
+	z-index: 15;
+}
+
+.closeIt {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 20;
+}
