@@ -12,12 +12,12 @@
 
 .s4_2 {
 	position: absolute;
-  left: 182px;
-  top: 436px;
-  width: 204px;
-  height: 220px;
+  left: 160px;
+  top: 450px;
+  width: 224px;
+  height: 238px;
 	animation: revealVertical 0.5s;
-	clip: rect(0px,210px,0px,0px);
+	clip: rect(0px,230px,0px,0px);
 	animation-delay: 0.2s;
 	animation-fill-mode: both;
 	z-index: 4;
@@ -158,12 +158,12 @@
 
 @keyframes revealVertical {
   0% {
-    clip: rect(0px,210px,0px,0px);
+    clip: rect(0px,230px,0px,0px);
 	opacity: 1;
   }
   
   100% {
-    clip: rect(0px,210px,230px,0px);
+    clip: rect(0px,230px,250px,0px);
 	opacity: 1;
   }
 }

@@ -37,10 +37,10 @@
 
 .s1_4 {
 	position: absolute;
-  left: 657px;
-  top: 289px;
-  width: 229px;
-  height: 196px;
+  left: 645px;
+  top: 291px;
+  width: 249px;
+  height: 202px;
 	animation: zoomIn 1s;
 	animation-delay: 0.4s;
 	animation-fill-mode: both;
@@ -49,10 +49,10 @@
 
 .s1_5 {
 	position: absolute;
-  left: 641px;
-  top: 374px;
-  width: 258px;
-  height: 57px;
+  left: 631px;
+  top: 379px;
+  width: 275px;
+  height: 58px;
 	animation: flashLong 2.5s infinite;
 	animation-delay: 1s;
 	animation-fill-mode: both;

@@ -36,10 +36,10 @@
 
 .s8_4 {
 	position: absolute;
-  left: 87px;
-  top: 499px;
-  width: 315px;
-  height: 85px;
+  left: 77px;
+  top: 467px;
+  width: 324px;
+  height: 146px;
 	animation: fadeInLeft 0.5s;
 	animation-delay: 0.5s;
 	animation-fill-mode: both;
@@ -49,9 +49,9 @@
 .s8_5 {
 	position: absolute;
   left: 614px;
-  top: 499px;
-  width: 278px;
-  height: 85px;
+  top: 467px;
+  width: 324px;
+  height: 150px;
 	animation: fadeInRight 0.5s;
 	animation-delay: 0.5s;
 	animation-fill-mode: both;

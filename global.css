@@ -239,6 +239,16 @@ html[xmlns] .clearfix {
 }
 
 
+
+.takeCover {
+	position: absolute;
+  left: 866px;
+  top: 676px;
+  width: 44px;
+  height: 92px;
+	z-index: 10;
+}
+
 .pop {
 	position: absolute;
 	width: 1024px;
@@ -249,27 +259,10 @@ html[xmlns] .clearfix {
 
 .popUp {
 	position: absolute;
-  left: 926px;
-  top: 697px;
-  width: 98px;
-  height: 71px;
-	z-index: 15;
-}
-
-.api {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-	display: none;
-	z-index: 10;
-}
-
-.graphUp {
-	position: absolute;
-  left: 236px;
-  top: 366px;
-  width: 318px;
-  height: 350px;
+  left: 912px;
+  top: 676px;
+  width: 44px;
+  height: 92px;
 	z-index: 15;
 }
 
@@ -281,12 +274,29 @@ html[xmlns] .clearfix {
 	z-index: 10;
 }
 
+.graphUp {
+	position: absolute;
+  left: 72px;
+  top: 412px;
+  width: 391px;
+  height: 302px;
+	z-index: 15;
+}
+
+.api {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 10;
+}
+
 .apiUp {
 	position: absolute;
-  left: 828px;
-  top: 697px;
-  width: 98px;
-  height: 71px;
+  left: 958px;
+  top: 676px;
+  width: 44px;
+  height: 92px;
 	z-index: 15;
 }
 

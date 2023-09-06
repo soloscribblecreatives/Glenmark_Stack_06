@@ -13,9 +13,9 @@
 .s6_2 {
 	position: absolute;
   left: 204px;
-  top: 428px;
-  width: 237px;
-  height: 240px;
+  top: 451px;
+  width: 207px;
+  height: 213px;
 	animation: revealVerticalRev 1s;
 	clip: rect(300px,240px,300px,0px);
 	animation-delay: 0.2s;
