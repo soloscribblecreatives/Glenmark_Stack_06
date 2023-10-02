@@ -5,7 +5,7 @@
 <meta http-equiv="cache-control" content="max-age=200"/>
 <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
-<title>Telma-BS</title>
+<title>Telma-Beta</title>
 <link rel="stylesheet" type="text/css" href="animate.css" media="screen"/>
 <link rel="stylesheet" type="text/css" href="global.css" media="screen"/>
 
@@ -16,10 +16,9 @@
 
 <body>
 <div id="wrapper" rel="1">
-  <div class="menu"> <img src="menu.png" width="37" alt=""> </div>
   <div class="slide_arrow">
-    <div class="left_arrow" ><img src="left_arrow.png" alt="previous icon" width="23" height="23" ></div>
-    <div class="right_arrow" ><img src="right_arrow.png" alt="next icon" width="23" height="23"></div>
+    <div class="left_arrow" ><img src="left_arrow.png" alt="previous icon" width="30" height="30" ></div>
+    <div class="right_arrow" ><img src="right_arrow.png" alt="next icon" width="30" height="30"></div>
   </div>
   <div id="main_content"></div>
   <div class="reference active">
@@ -32,15 +31,14 @@
           <div class="slides"><img src="thumbs/05.png" alt=""></div>
           <div class="slides"><img src="thumbs/06.png" alt=""></div>
           <div class="slides"><img src="thumbs/07.png" alt=""></div>
-          <div class="slides"><img src="thumbs/08.png" alt=""></div>
-          <div class="slides"><img src="thumbs/09.png" alt=""></div>
       </div>
     </div>
     <div class="box_btn"></div>
   </div>
+  <div id="myconsole"></div>
+<div id="click_through"></div>
 </div>
-<div id="myconsole"></div>
-<div id="click_through" > </div>
+
 <script src="global.js" type="text/javascript" language="javascript"></script> 
 <script>
 var startTime = Date.now();
@@ -71,7 +69,7 @@ if (typeof(localStorage.getItem("currentcustomslideflag"))!='undefined' && local
 	
 switch(custcomslideid){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide9/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide9/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 }
 
@@ -82,7 +80,7 @@ switch(custcomslideid){
 	 
 }else{
 
-$("#main_content").html('<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide9/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide9/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div>');
+$("#main_content").html('<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide1/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_close1" onclick="hit_close1()"></div>');
 }
 });
 </script> 
