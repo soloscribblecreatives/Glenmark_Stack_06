@@ -68,7 +68,6 @@ function touchHandler(e) {
 
 	$(".left_arrow").click(function(event) {
 		go_nav('b');
-		$('.blocker').css("display","none");
 	});
 
 	$(".right_arrow").click(function(event) {
@@ -128,7 +127,6 @@ function touchHandler(e) {
 			return
 		} else {
 			go_nav('b');
-			$('.blocker').css("display","none");
 		}
 
 	  } ,
@@ -387,25 +385,25 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide1/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><video width="1024" height="768" controls autoplay><source src="slide1/1.mp4" type="video/mp4"></video>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide2/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide3/1.png" width="1024" height="768" alt=""></div><div class="launch"><img src="slide3/2.png"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div><div class="hit_0"><img src="slide3/2.jpg" width="1024" height="768" alt=""/></div><div class="hit_1"><img src="slide3/3.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide3/4.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_3"><img src="slide3/5.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_4"><img src="slide3/6.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop4" onclick="hit_pop4()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
 	break;
 	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide4/1.png" width="1024" height="768" alt=""></div><div class="intro"><img src="slide4/2.png"></div><div class="logo"><img src="slide4/3.png"></div><div class="punch"><img src="slide4/4.png"></div><div class="packshot"><img src="slide4/5.png"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide5/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide5/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide5/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide6/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide6/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide6/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 7:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide7/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide7/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide7/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide7/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 }
 
@@ -480,16 +478,13 @@ function open_page(url,page_id){
     if(currentslide == 2){
 	document.getElementById("click_through").innerHTML='';
 		}
-	if(currentslide == 3){
-	document.getElementById("click_through").innerHTML='<div class="blocker"></div><div class="hitBlock" onclick="checkBtns(1);"></div>';
-		}
 
 	}
 
 	function checkBtns(refNum){
 		switch(refNum){
 			case 1:
-			open_page('',4);
+			open_page('',1);
             break;
 		}
 	}
@@ -552,10 +547,10 @@ $(document).ready(function(){
 })
 
 
-
 /*--------------------- animation javascript -----------------------*/
 
 function hit_pop1() {
+	$('.hit_0').css("display","block");
 	$('.hit_1').css("display","block");
 	$('.hit_close1').css("display","block");
 	$('.hit_pop1').css("display","none");
@@ -563,7 +558,7 @@ function hit_pop1() {
 
 function hit_pop2() {
 	$('.hit_2').css("display","block");
-	$('.hit_close1').css("display","block");
+	$('.hit_close1').css("display","none");
 	$('.hit_pop2').css("display","none");
 }
 
@@ -598,6 +593,7 @@ function hit_pop7() {
 }
 
 function hit_close1() {
+	$('.hit_0').css("display","none");
 	$('.hit_1').css("display","none");
 	$('.hit_2').css("display","none");
 	$('.hit_3').css("display","none");

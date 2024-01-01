@@ -107,7 +107,7 @@ html[xmlns] .clearfix {
 }
 .slide_arrow {
 	position: relative;
-	top: 340px;
+	top: 380px;
 	opacity: .8;
 	display: block;
 	z-index: 999;
@@ -121,7 +121,7 @@ html[xmlns] .clearfix {
 	z-index: 999;
 	top: 3px;
 	width: 27px;
-	height: 30px;
+	height: 52px;
 	visibility: visible;
 }
 .right_arrow {
@@ -131,7 +131,7 @@ html[xmlns] .clearfix {
 	cursor: pointer;
 	z-index: 999;
 	width: 27px;
-	height: 30px;
+	height: 52px;
 	visibility: visible;
 }
 .reference {
@@ -198,7 +198,7 @@ html[xmlns] .clearfix {
 	background-repeat: no-repeat;
 	position: absolute;
 	bottom: 0px;
-	left: 50px;
+	left: 38px;
 	display: block;
 	width: 56px;
 	height: 20px;
@@ -236,21 +236,4 @@ html[xmlns] .clearfix {
 	border: 1px solid red;
 	background-color: rgba(0,0,0,0.5);
 	color: #ffffff;
-}
-
-
-.blocker {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-	z-index: 9995;
-}
-
-.hitBlock {
-  position: absolute;
-  left: 330px;
-  top: 202px;
-  width: 363px;
-  height: 360px;
-  z-index: 9999;
 }
