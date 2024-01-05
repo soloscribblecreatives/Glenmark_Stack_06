@@ -10,18 +10,49 @@
 	z-index: 1;
 }
 
-.hit_1 {
-  position: absolute;
-  width: 1024px;
-  height: 768px;
-  animation: fadeIn 1s;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-  display: none;
-  z-index: 20;
+.backgroundVid {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	background-color: #f5d02a;
+	z-index: 1;
 }
 
-.hit_0, .hit_2, .hit_3, .hit_4, .hit_5, .hit_6, .hit_7  {
+.blocker {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 999;
+}
+
+.takeHome {
+	position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1024px;
+  height: 75px;
+	z-index: 1000;
+}
+
+.takeCover {
+	position: absolute;
+  left: 909px;
+  top: 521px;
+  width: 115px;
+  height: 61px;
+	z-index: 10;
+}
+
+.takeKOL {
+	position: absolute;
+  left: 394px;
+  top: 508px;
+  width: 260px;
+  height: 260px;
+	z-index: 10;
+}
+
+.hit_1, .hit_2, .hit_3, .hit_4, .hit_5, .hit_6, .hit_7  {
   position: absolute;
   width: 1024px;
   height: 768px;
@@ -31,37 +62,37 @@
 
 .hit_pop1 {
 	position: absolute;
-  left: 108px;
-  top: 465px;
-  width: 238px;
-  height: 303px;
+  left: 909px;
+  top: 587px;
+  width: 115px;
+  height: 61px;
 	z-index: 10;
 }
 
 .hit_pop2 {
 	position: absolute;
-  left: 393px;
-  top: 465px;
-  width: 238px;
-  height: 303px;
+  left: 909px;
+  top: 653px;
+  width: 115px;
+  height: 61px;
 	z-index: 10;
 }
 
 .hit_pop3 {
 	position: absolute;
-  left: 182px;
-  top: 400px;
-  width: 350px;
-  height: 148px;
-	z-index: 20;
+  left: 909px;
+  top: 653px;
+  width: 115px;
+  height: 61px;
+	z-index: 10;
 }
 
 .hit_pop4 {
 	position: absolute;
-  left: 678px;
-  top: 465px;
-  width: 238px;
-  height: 303px;
+  left: 513px;
+  top: 503px;
+  width: 140px;
+  height: 186px;
 	z-index: 10;
 }
 
@@ -97,5 +128,5 @@
 	width: 1024px;
 	height: 768px;
 	display: none;
-	z-index: 25;
+	z-index: 20;
 }

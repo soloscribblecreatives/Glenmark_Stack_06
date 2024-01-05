@@ -1,0 +1,72 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.background {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.takeCover {
+	position: absolute;
+  left: 828px;
+  top: 694px;
+  width: 49px;
+  height: 74px;
+	z-index: 10;
+}
+
+.hit_1, .hit_2, .hit_3, .hit_4 {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  display: none;
+  z-index: 15;
+}
+
+.hit_pop1 {
+	position: absolute;
+  left: 878px;
+  top: 694px;
+  width: 49px;
+  height: 74px;
+	z-index: 10;
+}
+
+.hit_pop2 {
+	position: absolute;
+  left: 928px;
+  top: 694px;
+  width: 49px;
+  height: 74px;
+	z-index: 10;
+}
+
+.hit_pop3 {
+	position: absolute;
+  left: 350px;
+  top: 605px;
+  width: 335px;
+  height: 115px;
+	z-index: 10;
+}
+
+.hit_pop4 {
+	position: absolute;
+  left: 350px;
+  top: 605px;
+  width: 335px;
+  height: 115px;
+	z-index: 10;
+}
+
+.hit_close1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 20;
+}
