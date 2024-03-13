@@ -113,8 +113,8 @@
   top: 510px;
   width: 314px;
   height: 149px;
-	animation: fadeInUp 1s;
-	animation-delay: 5s;
+	animation: fadeInUp 0.5s;
+	animation-delay: 4.5s;
 	animation-fill-mode: both;
 	display: none;
 	z-index: 10;
@@ -123,10 +123,10 @@
 .s1_9 {
 	position: absolute;
   left: 670px;
-  top: 663px;
+  top: 670px;
   width: 325px;
   height: 34px;
-	animation: zoomIn 1s;
+	animation: fadeInRight 0.5s;
 	animation-delay: 5.5s;
 	animation-fill-mode: both;
 	display: none;
