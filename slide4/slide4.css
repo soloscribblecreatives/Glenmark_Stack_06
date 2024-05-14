@@ -1,10 +1,36 @@
-* {
+*{
 	margin: 0px;
 	padding: 0px;
 }
 
-.background {
+.s1 {
 	position: absolute;
 	width: 1024px;
 	height: 768px;
+	z-index: 1;
+}
+
+.s2 {
+	position: absolute;
+  left: 328px;
+  top: 429px;
+  width: 362px;
+  height: 339px;
+	animation: slideInUp 0.8s;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+
+@keyframes revealHorizontal {
+  0% {
+    clip: rect(0px,0px,500px,0px);
+	opacity: 1;
+  }
+  
+  100% {
+    clip: rect(0px,1024px,500px,0px);
+	opacity: 1;
+  }
 }
