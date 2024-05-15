@@ -77,12 +77,12 @@ html[xmlns] .clearfix {
 	position: relative;
 	overflow: hidden;
 }
-#wrapper .left_arrow, #wrapper .right_arrow {
+/* #wrapper .left_arrow, #wrapper .right_arrow {
 	opacity: 0;
 }
 #wrapper:hover .left_arrow, #wrapper:hover .right_arrow {
 	opacity: 1;
-}
+} */
 .bottomline {
 	bottom: 40px;
 	left: 120px;
@@ -107,33 +107,36 @@ html[xmlns] .clearfix {
 }
 .slide_arrow {
 	position: relative;
-	top: 380px;
+	top: 385px;
 	opacity: .8;
-	display: block;
-	z-index: 999;
-	visibility: visible;
+	display: none;
+	z-index: 950;
 }
 .left_arrow {
 	float: left;
 	position: absolute;
 	left: 45px;
 	cursor: pointer;
-	z-index: 999;
 	top: 3px;
-	width: 27px;
-	height: 52px;
-	visibility: visible;
+	width: 51px;
+	width: 51px;
+	display: none;
+	z-index: 950;
 }
 .right_arrow {
 	float: right;
 	position: absolute;
 	right: 40px;
 	cursor: pointer;
-	z-index: 999;
-	width: 27px;
-	height: 52px;
-	visibility: visible;
+	width: 51px;
+	height: 51px;
+	animation: pulse 1s infinite;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	display: none;
+	z-index: 950;
 }
+
 .reference {
 	-webkit-transition-duration: 200ms;
 	-webkit-transition-timing-function: ease-in;
@@ -160,6 +163,7 @@ html[xmlns] .clearfix {
 	-webkit-transition: bottom 5s, -webkit-transform 2s;
 	transition: bottom 1s, -webkit-transform 2s;
 	visibility: visible;
+	display: none;
 	z-index: 999;
 }
 .slide_jumper {
@@ -199,7 +203,7 @@ html[xmlns] .clearfix {
 	position: absolute;
 	bottom: 0px;
 	left: 38px;
-	display: block;
+	display: none;
 	width: 56px;
 	height: 20px;
 	border-radius: 5px 5px 0 0;
@@ -239,6 +243,20 @@ html[xmlns] .clearfix {
 }
 
 
+
+
+
+
+.playSiren {
+	position: absolute;
+	left: 0px;
+    top: 0px;
+	width: 1024px;
+	height: 768px;
+	z-index: 1025;
+}
+
+
 .nav {
   position: absolute;
   left: 821px;
@@ -254,11 +272,13 @@ html[xmlns] .clearfix {
   top: 692px;
   width: 51px;
   height: 76px;
-	z-index: 50;
+	z-index: 950;
 }
 
 .hit_1, .hit_2, .hit_3, .hit_4, .hit_5, .hit_6, .hit_7, .hit_8  {
   position: absolute;
+  left: 0px;
+  top: 0px;
   width: 1024px;
   height: 768px;
   display: none;
@@ -271,7 +291,7 @@ html[xmlns] .clearfix {
   top: 692px;
   width: 51px;
   height: 76px;
-	z-index: 50;
+	z-index: 950;
 }
 
 .hit_pop2 {
@@ -280,13 +300,25 @@ html[xmlns] .clearfix {
   top: 692px;
   width: 51px;
   height: 76px;
-	z-index: 50;
+	z-index: 950;
 }
 
 .hit_close1 {
 	position: absolute;
+	left: 0px;
+    top: 0px;
 	width: 1024px;
 	height: 768px;
 	display: none;
-	z-index: 60;
+	z-index: 999;
+}
+
+
+.blocker {
+	position: absolute;
+	left: 0px;
+    top: 0px;
+	width: 1024px;
+	height: 768px;
+	z-index: 900;
 }
