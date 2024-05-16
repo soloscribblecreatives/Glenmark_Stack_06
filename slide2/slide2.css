@@ -3,18 +3,6 @@
 	padding: 0px;
 }
 
-.moveRight {
-  position: absolute;
-  right: 40px;
-  top: 385px;
-  width: 51px;
-  height: 51px;
-  	animation: pulse 1s infinite;
-	animation-delay: 0s;
-	animation-fill-mode: both;
-  z-index: 950;
-}
-
 .hit_pop3 {
 	position: absolute;
   left: 938px;

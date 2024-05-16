@@ -70,7 +70,7 @@
   width: 175px;
   height: 169px;
 	animation: flash 1s infinite;
-	animation-delay: 3.2s;
+	animation-delay: 0s;
 	animation-fill-mode: both;
 	display: none;
 	z-index: 5;
@@ -83,10 +83,36 @@
   width: 73px;
   height: 65px;
 	animation: pulse 1s infinite;
-	animation-delay: 3.2s;
+	animation-delay: 0s;
 	animation-fill-mode: both;
 	display: none;
 	z-index: 5;
+}
+
+.s6-1 {
+	position: absolute;
+  left: 768px;
+  top: 180px;
+  width: 209px;
+  height: 203px;
+	animation: flash 1s infinite;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	display: none;
+	z-index: 1100;
+}
+
+.s7-1 {
+	position: absolute;
+  left: 834px;
+  top: 245px;
+  width: 73px;
+  height: 65px;
+	animation: pulse 1s infinite;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	display: none;
+	z-index: 1100;
 }
 
 .s8 {

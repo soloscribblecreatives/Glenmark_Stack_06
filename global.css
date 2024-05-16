@@ -126,7 +126,7 @@ html[xmlns] .clearfix {
 .right_arrow {
 	float: right;
 	position: absolute;
-	right: 40px;
+	right: 20px;
 	cursor: pointer;
 	width: 51px;
 	height: 51px;
@@ -245,7 +245,17 @@ html[xmlns] .clearfix {
 
 
 
-
+.moveRight {
+  position: absolute;
+  right: 20px;
+  top: 385px;
+  width: 51px;
+  height: 51px;
+  	animation: pulse 1s infinite;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+  z-index: 950;
+}
 
 .playSiren {
 	position: absolute;
