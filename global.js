@@ -477,17 +477,17 @@ function open_page(url,page_id){
 	$('.right_arrow').css("display","none");
 		}
 	if(currentslide == 3){
-	document.getElementById("click_through").innerHTML='<div class="hit_close1" onclick="hit_close1()"></div><div class="blocker"></div><div class="takeCover" onclick="takeCover3();"></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_pop4" onclick="hit_pop4()"></div><div class="hit_pop5" onclick="hit_pop5()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="moveRight" onclick="moveRight();"><img src="slide2/right_arrow.png"/></div>';
+	document.getElementById("click_through").innerHTML='<div class="hit_close1" onclick="hit_close1()"></div><div class="blocker"></div><div class="takeCover" onclick="takeCover2();"></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_pop4" onclick="hit_pop4()"></div><div class="hit_pop5" onclick="hit_pop5()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="moveRight" onclick="moveRight();"><img src="slide2/right_arrow.png"/></div>';
 	$('.slide_arrow').css("display","none");
 	$('.right_arrow').css("display","none");
 		}
 	if(currentslide == 4){
-	document.getElementById("click_through").innerHTML='<div class="hit_close1" onclick="hit_close1()"></div><div class="blocker"></div><div class="takeCover4" onclick="takeCover4();"></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="moveRight" onclick="moveRight();"><img src="slide2/right_arrow.png"/></div>';
+	document.getElementById("click_through").innerHTML='<div class="hit_close1" onclick="hit_close1()"></div><div class="blocker"></div><div class="takeCover" onclick="takeCover2();"></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="moveRight" onclick="moveRight();"><img src="slide2/right_arrow.png"/></div>';
 	$('.slide_arrow').css("display","none");
 	$('.right_arrow').css("display","none");
 		}
 	if(currentslide == 5){
-	document.getElementById("click_through").innerHTML='<div class="hit_close1" onclick="hit_close1()"></div><div class="blocker"></div><div class="takeCover" onclick="takeCover();"></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_pop4" onclick="hit_pop4()"></div><div class="hit_pop5" onclick="hit_pop5()"></div><div class="hit_pop6" onclick="hit_pop6()"></div><div class="hit_pop7" onclick="hit_pop7()"></div><div class="hit_pop8" onclick="hit_pop8()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
+	document.getElementById("click_through").innerHTML='<div class="hit_close1" onclick="hit_close1()"></div><div class="blocker"></div><div class="takeCover" onclick="takeCover2();"></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_pop4" onclick="hit_pop4()"></div><div class="hit_pop5" onclick="hit_pop5()"></div><div class="hit_pop6" onclick="hit_pop6()"></div><div class="hit_pop7" onclick="hit_pop7()"></div><div class="hit_pop8" onclick="hit_pop8()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
 	$('.slide_arrow').css("display","block");
 	$('.right_arrow').css("display","block");
 		}
@@ -693,11 +693,7 @@ function takeCover() {
 		open_page("",1);
 }
 
-function takeCover3() {
-		open_page("",2);
-}
-
-function takeCover4() {
+function takeCover2() {
 		open_page("",2);
 }
 
