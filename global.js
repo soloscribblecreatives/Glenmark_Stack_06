@@ -198,7 +198,7 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 	
  } 
  
-	if(nextSlideNo <= 5){//number 3 is number of total slides present
+	if(nextSlideNo <= 8){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -302,10 +302,10 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id <= 5){
+	if(page_id <= 8){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 6){
+		if(page_id == 9){
             flag=1;
         }
 	}
@@ -385,19 +385,28 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1"><img src="slide1/s1.png" width="1024" height="768" alt=""/></div><div class="s2"><img src="slide1/s2.png"/></div><div class="s3"><img src="slide1/s3.png"/></div><div class="s4"><img src="slide1/s4.png"/></div><div class="s5"><img src="slide1/s5.png"/></div><div class="s6"><img src="slide1/s6.png"/></div><div class="s7"><img src="slide1/s7.png"/></div><div class="s8"><img src="slide1/s8.png"/></div><div class="s9"><img src="slide1/s9.png"/></div><div class="s10"><img src="slide1/s10.png"/></div><audio loop id="siren" src="slide1/siren.mp3" type="audio/mpeg"></audio><div class="playSiren" onclick="playSiren()"></div><div class="nav"><img src="slide1/nav.png"/></div><div class="takeCover" onclick="takeCover();"></div><div class="hit_1"><img src="slide2/ref.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide1/api.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="s6-1"><img src="slide1/s6-1.png"/></div><div class="s7-1"><img src="slide1/s7-1.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide1/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide8/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s1"><img src="slide2/s1.png" width="1024" height="768" alt=""/></div><div class="s3 bounce1"><img src="slide2/s3.png"/></div><div class="s4"><img src="slide2/s4.png"/></div><div class="s5 bounce2"><img src="slide2/s5.png"/></div><div class="s6"><img src="slide2/s6.png"/></div><div class="s7"><img src="slide2/s7.png"/></div><div class="w89"><div class="s2"><img src="slide2/s2.png"/></div><div class="s8"><img src="slide2/s8.png"/></div><div class="s9"><img src="slide2/s9.png"/></div></div><div class="s10"><img src="slide2/s10.png"/></div><div class="s11"><img src="slide2/s11.png"/></div><div class="nav"><img src="slide1/nav.png"/></div><div class="takeCover" onclick="takeCover();"></div><div class="hit_1"><img src="slide2/ref.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide1/api.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_3"><img src="slide2/pop-up.png" width="1024" height="768" alt=""/></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_close1" onclick="hit_close1()"></div><audio autoplay loop id="positive" onplay="myFunction()" src="slide2/positive.mp3" type="audio/mpeg"></audio>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide2/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide8/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div>';
 	break;
 	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s1"><img src="slide3/s1.png" width="1024" height="768" alt=""/></div><div class="s2"><img src="slide3/s2.png"/></div><div class="hit_1"><img src="slide3/2.png" width="1024" height="768" alt=""/></div><div class="nav"><img src="slide1/nav.png"/></div><div class="takeCover" onclick="takeCover3();"></div><div class="hit_1"><img src="slide3/ref.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide1/api.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_3"><img src="slide3/pop1.png" width="1024" height="768" alt=""/></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_4"><img src="slide3/pop2.png" width="1024" height="768" alt=""/></div><div class="hit_pop4" onclick="hit_pop4()"></div><div class="hit_5"><img src="slide3/pop3.png" width="1024" height="768" alt=""/></div><div class="hit_pop5" onclick="hit_pop5()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide3/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide8/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div>';
 	break;
 	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="s1"><img src="slide4/s1.png" width="1024" height="768" alt=""/></div><div class="s2"><img src="slide4/s2.png"/></div><div class="nav"><img src="slide1/nav.png"/></div><div class="takeCover" onclick="takeCover4();"></div><div class="hit_1"><img src="slide4/ref.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide1/api.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide4/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide8/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div>';
 	break;
 	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="s1"><img src="slide5/s1.png" width="1024" height="768" alt=""/></div><div class="s2"><img src="slide5/s2.png"/></div><div class="nav"><img src="slide1/nav.png"/></div><div class="takeCover" onclick="takeCover();"></div><div class="hit_1"><img src="slide5/ref.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide1/api.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_3"><img src="slide5/pop1.png" width="1024" height="768" alt=""/></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_4"><img src="slide5/pop2.png" width="1024" height="768" alt=""/></div><div class="hit_pop4" onclick="hit_pop4()"></div><div class="hit_5"><img src="slide5/pop3.png" width="1024" height="768" alt=""/></div><div class="hit_pop5" onclick="hit_pop5()"></div><div class="hit_6"><img src="slide5/pop4.png" width="1024" height="768" alt=""/></div><div class="hit_pop6" onclick="hit_pop6()"></div><div class="hit_7"><img src="slide5/pop5.png" width="1024" height="768" alt=""/></div><div class="hit_pop7" onclick="hit_pop7()"></div><div class="hit_8"><img src="slide5/pop6.png" width="1024" height="768" alt=""/></div><div class="hit_pop8" onclick="hit_pop8()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide5/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide5/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide8/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div>';
+	break;
+	case 6:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide6/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide6/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide8/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div>';
+	break;
+	case 7:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide7/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide7/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide8/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div>';
+	break;
+	case 8:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide8/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide8/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide8/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div>';
 	break;
 }
 
@@ -467,20 +476,12 @@ function open_page(url,page_id){
 	document.getElementById("click_through").innerHTML='';
 
 	if(currentslide == 1){
-	document.getElementById("click_through").innerHTML='<div class="playSiren" onclick="playSiren()"></div>';
+	document.getElementById("click_through").innerHTML='';
 		}
     if(currentslide == 2){
 	document.getElementById("click_through").innerHTML='';
 		}
-	if(currentslide == 3){
-	document.getElementById("click_through").innerHTML='';
-		}
-	if(currentslide == 4){
-	document.getElementById("click_through").innerHTML='';
-		}
-	if(currentslide == 5){
-	document.getElementById("click_through").innerHTML='';
-		}
+
 	}
 
 	function checkBtns(refNum){
@@ -548,70 +549,55 @@ $(document).ready(function(){
 	})
 })
 
+
 /*--------------------- animation javascript -----------------------*/
 
 function hit_pop1() {
 	$('.hit_1').css("display","block");
 	$('.hit_close1').css("display","block");
 	$('.hit_pop1').css("display","none");
-	$('.moveRight').css("zIndex","45");
-	$('.slide_arrow').css("zIndex","45");
 }
 
 function hit_pop2() {
 	$('.hit_2').css("display","block");
 	$('.hit_close1').css("display","block");
 	$('.hit_pop2').css("display","none");
-	$('.moveRight').css("zIndex","45");
-	$('.slide_arrow').css("zIndex","45");
 }
 
 function hit_pop3() {
 	$('.hit_3').css("display","block");
 	$('.hit_close1').css("display","block");
 	$('.hit_pop3').css("display","none");
-	$('.moveRight').css("zIndex","45");
-	$('.slide_arrow').css("zIndex","45");
 }
 
 function hit_pop4() {
 	$('.hit_4').css("display","block");
 	$('.hit_close1').css("display","block");
 	$('.hit_pop4').css("display","none");
-	$('.moveRight').css("zIndex","45");
-	$('.slide_arrow').css("zIndex","45");
 }
 
 function hit_pop5() {
 	$('.hit_5').css("display","block");
 	$('.hit_close1').css("display","block");
 	$('.hit_pop5').css("display","none");
-	$('.moveRight').css("zIndex","45");
-	$('.slide_arrow').css("zIndex","45");
 }
 
 function hit_pop6() {
 	$('.hit_6').css("display","block");
 	$('.hit_close1').css("display","block");
 	$('.hit_pop6').css("display","none");
-	$('.moveRight').css("zIndex","45");
-	$('.slide_arrow').css("zIndex","45");
 }
 
 function hit_pop7() {
 	$('.hit_7').css("display","block");
 	$('.hit_close1').css("display","block");
 	$('.hit_pop7').css("display","none");
-	$('.moveRight').css("zIndex","45");
-	$('.slide_arrow').css("zIndex","45");
 }
 
 function hit_pop8() {
 	$('.hit_8').css("display","block");
 	$('.hit_close1').css("display","block");
 	$('.hit_pop8').css("display","none");
-	$('.moveRight').css("zIndex","45");
-	$('.slide_arrow').css("zIndex","45");
 }
 
 function hit_close1() {
@@ -632,66 +618,8 @@ function hit_close1() {
 	$('.hit_pop7').css("display","block");
 	$('.hit_pop8').css("display","block");
 	$('.hit_close1').css("display","none");
-	$('.moveRight').css("zIndex","950");
-	$('.slide_arrow').css("zIndex","950");
-}
-
-
-function playSiren() {
-	$('.playSiren').css("display","none");
-	setTimeout(function(){
-		document.getElementById("siren").play();
-	},3300);
-	$('.s2').css("display","block");
-	$('.s3').css("display","block");
-	$('.s4').css("display","block");
-	$('.s5').css("display","block");
-	setTimeout(function(){
-		$('.s6').css("display","block");
-		$('.s7').css("display","block");
-	},3200);
-	$('.s8').css("display","block");
-	$('.s9').css("display","block");
-	$('.s10').css("display","block");
-	setTimeout(function(){
-		$('.s11').css("display","block");
-		$('.s6-1').css("display","block");
-		$('.s7-1').css("display","block");
-	},6000);
-	setTimeout(function(){
-		$('.s11').css("display","none");
-		$('.s6-1').css("display","none");
-		$('.s7-1').css("display","none");
-	},10000);
-}
-
-function myFunction() {
-	setTimeout(function(){
-		$(".s3").removeClass("bounce1");
-		$(".s3").addClass("pulse");
-	},2000);
-	setTimeout(function(){
-		$(".s5").removeClass("bounce2");
-		$(".s5").addClass("pulse");
-	},3000);
 }
 
 function takeCover() {
 		open_page("",1);
-}
-
-function takeCover2() {
-		open_page("",2);
-}
-
-function takeKidney() {
-		open_page("",3);
-}
-
-function takeHeart() {
-		open_page("",4);
-}
-
-function moveRight() {
-		open_page("",5);
 }
