@@ -1,25 +1,71 @@
-* {
+*{
 	margin: 0px;
 	padding: 0px;
 }
 
-.background {
+.s1 {
 	position: absolute;
 	width: 1024px;
 	height: 768px;
 	z-index: 1;
 }
 
+.s2 {
+	position: absolute;
+  left: 350px;
+  top: 136px;
+  width: 324px;
+  height: 311px;
+	animation: slideInLeft 1s ease-in;
+	animation-delay: 0.2s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s3 {
+	position: absolute;
+  left: 421px;
+  top: 268px;
+  width: 181px;
+  height: 156px;
+	animation: slideInRight 1s ease-in;
+	animation-delay: 0.2s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s4 {
+  position: absolute;
+  left: 190px;
+  top: 498px;
+  width: 644px;
+  height: 117px;
+  	animation: fadeInUp 0.5s;
+	animation-delay: 1.2s;
+	animation-fill-mode: both;
+  z-index: 5;
+}
+
+
+.nav {
+  position: absolute;
+  left: 882px;
+  top: 708px;
+  width: 116px;
+  height: 36px;
+  z-index: 5;
+}
+
 .takeCover {
 	position: absolute;
-  left: 771px;
-  top: 659px;
-  width: 66px;
-  height: 109px;
+  left: 880px;
+  top: 674px;
+  width: 40px;
+  height: 94px;
 	z-index: 10;
 }
 
-.hit_1, .hit_2, .hit_3, .hit_4, .hit_5, .hit_6, .hit_7  {
+.hit_1, .hit_2, .hit_3, .hit_4 {
   position: absolute;
   width: 1024px;
   height: 768px;
@@ -29,64 +75,38 @@
 
 .hit_pop1 {
 	position: absolute;
-  left: 927px;
-  top: 659px;
-  width: 66px;
-  height: 109px;
+  left: 920px;
+  top: 674px;
+  width: 40px;
+  height: 94px;
 	z-index: 10;
 }
 
 .hit_pop2 {
 	position: absolute;
-  left: 845px;
-  top: 645px;
-  width: 75px;
-  height: 123px;
+  left: 960px;
+  top: 674px;
+  width: 40px;
+  height: 94px;
 	z-index: 10;
 }
 
 .hit_pop3 {
 	position: absolute;
-  left: 368px;
-  top: 434px;
-  width: 140px;
-  height: 186px;
-	z-index: 10;
+  left: 857px;
+  top: 682px;
+  width: 68px;
+  height: 86px;
+  display: none;
+	z-index: 30;
 }
 
 .hit_pop4 {
 	position: absolute;
-  left: 513px;
-  top: 503px;
-  width: 140px;
-  height: 186px;
-	z-index: 10;
-}
-
-.hit_pop5 {
-	position: absolute;
-  left: 659px;
-  top: 435px;
-  width: 140px;
-  height: 186px;
-	z-index: 10;
-}
-
-.hit_pop6 {
-	position: absolute;
-  left: 805px;
-  top: 586px;
-  width: 140px;
-  height: 105px;
-	z-index: 10;
-}
-
-.hit_pop7 {
-	position: absolute;
-  left: 805px;
-  top: 479px;
-  width: 140px;
-  height: 105px;
+  left: 516px;
+  top: 513px;
+  width: 464px;
+  height: 206px;
 	z-index: 10;
 }
 
