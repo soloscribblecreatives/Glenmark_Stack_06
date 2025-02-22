@@ -12,40 +12,27 @@
 
 .s2 {
 	position: absolute;
-  left: 350px;
-  top: 136px;
-  width: 324px;
-  height: 311px;
-	animation: slideInLeft 1s ease-in;
-	animation-delay: 0.2s;
+  left: 55px;
+  top: 227px;
+  width: 313px;
+  height: 314px;
+	animation: stampIn 0.3s ease-in;
+	animation-delay: 0s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
 
-.s3 {
-	position: absolute;
-  left: 421px;
-  top: 268px;
-  width: 181px;
-  height: 156px;
-	animation: slideInRight 1s ease-in;
-	animation-delay: 0.2s;
-	animation-fill-mode: both;
-	z-index: 5;
+@keyframes stampIn {
+	0%	{
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 1;
+	}
+	100%	{
+		transform: scale(1);
+		opacity: 1;
+	}
 }
-
-.s4 {
-  position: absolute;
-  left: 190px;
-  top: 498px;
-  width: 644px;
-  height: 117px;
-  	animation: fadeInUp 0.5s;
-	animation-delay: 1.4s;
-	animation-fill-mode: both;
-  z-index: 5;
-}
-
 
 .nav {
   position: absolute;
